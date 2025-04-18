@@ -86,7 +86,7 @@ def index():
         return f"Infrastructure problem: Please create a support ticket", 503 
 
     response = make_response("Containers Ready", 200)
-    response.headers['x_user_port'] = session['port'] 
+    response.headers['X-User-Port'] = session['port'] 
     return response 
 
 if __name__ == '__main__': 
